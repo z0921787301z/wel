@@ -5,10 +5,10 @@ from humanfriendly import format_timespan, format_size, format_number, format_le
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse
 
 botStart = time.time()
-cl = LINE()
-cl.log(cl.authToken)
-clMID = cl.profile.mid
-oepoll = OEPoll(cl)
+cl = LINE("oagdaoke@itymail.com","djry9420")
+print("機器壹登入成功")
+print("[ 登錄系統 ]成功(  -᷄ω-᷅ )")
+print("登入所花時間為"+str(format_timespan(time.time())))
 
 gp = json.load(codecs.open("group.json","r","utf-8"))
 read = json.load(codecs.open("read.json","r","utf-8"))

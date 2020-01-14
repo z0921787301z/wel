@@ -457,6 +457,8 @@ def find_between_r( s, first, last ):
         return s[start:end]
     except ValueError:
         return ""
+    except Exception as error:
+        logError(error)
 while True:
     try:
         ops = oepoll.singleTrace(count=50)

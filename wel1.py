@@ -6,15 +6,14 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 
 botStart = time.time()
 cl = LINE("oagdaoke@itymail.com","djry9420")
+print("機器壹登入成功")
+print("[ 登錄系統 ]成功(  -᷄ω-᷅ )")
+print("登入所花時間為"+str(format_timespan(time.time())))
 
 gp = json.load(codecs.open("group.json","r","utf-8"))
 read = json.load(codecs.open("read.json","r","utf-8"))
 settings = json.load(codecs.open("temp.json","r","utf-8"))
 ban = json.load(codecs.open("ban.json","r","utf-8"))
-
-print("機器壹登入成功")
-print("[ 登錄系統 ]成功(  -᷄ω-᷅ )")
-print("登入所花時間為"+str(format_timespan(time.time())))
 #------------------------------------------------------------------------------------------------------------------------------------------
 def restartBot():
     print ("[ 提醒 ] 機器重啟中")
